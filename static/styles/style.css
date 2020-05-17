@@ -1,0 +1,164 @@
+:root {
+  --pale-green: rgb(6, 107, 87);
+  --base-green: rgb(23, 98, 25);
+  --light-green: rgb(153, 205, 44);
+  --golden: rgb(249, 197, 48);
+  --red: rgb(219, 55, 53);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(23, 98, 25, 0.2);
+  background-image: url('../../assets/images/bg.jpg');
+  background-size: auto 100%;
+  background-blend-mode: multiply;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  background: var(--pale-green);
+}
+
+.navbar-item {
+  padding: 0.5em 1em;
+  font-size: 1.8rem;
+  color: white;
+  font-family: 'Bree Serif', serif;
+}
+
+.input-wrapper {
+  position: absolute;
+  top: 50%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#input-text {
+  width: 70%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  padding: 0.8em 1.5em;
+  border: 1.5px solid var(--pale-green);
+  border-right: none;
+  background: #f1f1f1;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#submit-btn {
+  position: relative;
+  left: -5px;
+  padding: 0.8em 1.5em;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  background: var(--pale-green);
+  color: white;
+  outline: none;
+}
+
+.messages-wrapper {
+  display: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  height: 32%;
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.messages-heading {
+  display: inline-block;
+  font-size: 2rem;
+  font-family: 'Philosopher', sans-serif;
+  font-weight: bold;
+}
+
+#messages-list {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  margin-top: 0.5em;
+  overflow-y: auto;
+}
+
+#messages-list li {
+  padding: 0.5em 2em 0.9em 2em;
+  background: rgba(23, 98, 25, 0.5);
+  color: white;
+  margin: 0.3em auto;
+  border-radius: 5px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+i {
+  display: inline-block;
+  color: white;
+  margin-left: 1em;
+  transition: color 0.1s ease;
+}
+
+i:hover {
+  color: var(--red);
+}
+
+#messages-list li img {
+  height: 1.4em;
+  position: relative;
+  top: 0.3em;
+}
+
+.legend-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  position: absolute;
+  top: 60%;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.legend-heading {
+  font-size: 1.5rem;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.emoji-list {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.5em;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.emoji-list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0.3em;
+  margin-bottom: 0.2em;
+  width: 100%;
+}
+
+.emoji-list img {
+  height: 1.4em;
+}

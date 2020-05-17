@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoji Predictor</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Quicksand:wght@300&family=Roboto+Mono:wght@100;300&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ############ -->
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ################## -->
+
+    <link rel="stylesheet" href="static/styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar-item">
+          <span>EmojiPredictor</span>
+        </div>
+      </nav>
+      <div class="messages-wrapper">
+        <span class="messages-heading">Previously Submitted Messages</span>
+        <ul id="messages-list"></ul>
+      </div>
+      <div class="input-wrapper">
+        <input id="input-text" type="text" placeholder="Enter a sentence.." />
+        <button id="submit-btn" type="submit">Predict Emoji</button>
+      </div>
+      <div class="legend-wrapper">
+        <h3 class="legend-heading">Emoji Guide</h3>
+
+        <ul class="emoji-list">
+          <li>Joy <img src="assets/images/joy.png" /></li>
+          <li>Anger <img src="assets/images/anger.png" /></li>
+          <li>Sadness <img src="assets/images/sadness.png" /></li>
+          <li>Shame <img src="assets/images/shame.png" /></li>
+          <li>Guilt <img src="assets/images/guilt.png" /></li>
+          <li>Fear <img src="assets/images/fear.png" /></li>
+          <li>Disgust <img src="assets/images/disgust.png" /></li>
+        </ul>
+      </div>
+    </div>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
